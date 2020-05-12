@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Виктор Чернов](https://htmlacademy.ru/profile/id1479435).
-* Наставник: `Артём Рудов`(https://htmlacademy.ru/profile/artrudov)
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov)
 
 ---
 
