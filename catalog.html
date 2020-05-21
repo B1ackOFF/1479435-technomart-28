@@ -90,7 +90,9 @@
       <h1>Перфораторы</h1>
 
       <ul>
-        <li>Сортировать по:</li>
+        <li>
+          Сортировать по:
+        </li>
         <li>
           <a href="blank.html">По цене</a>
         </li>
@@ -105,31 +107,48 @@
       <section><!--Нужно ли переместить внутрь этой секции: заголовок h1 Перфораторы, список ul с сортировкой, и список с пагинацией ?-->>
         <ul>
           <li>
-            <a href="blank.html">
-              <p>
-                <img src="img/product.html" alt="Перфоратор Bosh BFG6000" width="220" height="318">    
-              </p>
-              <h3>Перфоратор Bosh BFG6000</h3>
-            </a>
-            <p>30500 р.</p>
-            <p>25500 р.</p>
-            <span>New</span>
-            <button type="button">Купить</button>
-            <button type="button">В закладки</button>   
+            <article>
+              <a href="blank.html">
+                <p>
+                  <img src="" alt="Перфоратор Bosh BFG6000" width="144" height="128">    
+                </p>
+                <h3>Перфоратор Bosh BFG6000</h3>
+              </a>
+              <p><del>30500 р. </del>25500 р.</p>
+              <span>New</span>
+              <a href="blank.html">Купить</a>
+              <a href="blank.html">В закладки</a>
+            </article>   
+          </li>
+          
+          <li>
+            <article>
+              <a href="blank.html">
+                <p>
+                  <img src="" alt="Перфоратор Bosh BFG6000" width="144" height="128">    
+                </p>
+                <h3>Перфоратор Bosh BFG6000</h3>
+              </a>
+              <p><del>30500 р. </del>25500 р.</p>
+              <span>New</span>
+              <a href="blank.html">Купить</a>
+              <a href="blank.html">В закладки</a>
+            </article>   
           </li>
 
           <li>
-            <a href="blank.html">
-              <p>
-                <img src="img/product.html" alt="Перфоратор Bosh BFG6000" width="220" height="318">    
-              </p>
-              <h3>Перфоратор Bosh BFG6000</h3>
-            </a>
-            <p>30500 р.</p>
-            <p>25500 р.</p>
-            <span>New</span>
-            <button type="button">Купить</button>
-            <button type="button">В закладки</button>   
+            <article>
+              <a href="blank.html">
+                <p>
+                  <img src="" alt="Перфоратор Bosh BFG6000" width="144" height="128">    
+                </p>
+                <h3>Перфоратор Bosh BFG6000</h3>
+              </a>
+              <p><del>30500 р. </del>25500 р.</p>
+              <span>New</span>
+              <a href="blank.html">Купить</a>
+              <a href="blank.html">В закладки</a>
+            </article>   
           </li>
           <!--Не стал пока копировать все 9 товаров, что бы не увеличивать размер кода -->  
         </ul> 
@@ -150,42 +169,58 @@
         </li>
       </ul>
 
-      <section>
+      <aside>
         <span>Фильтр</span>
 
         <h2>Производители</h2>
 
-        <ul>
-          <li>
-            <input type="checkbox" value="Bosch">Bosch
-          </li>
-          <li>
-            <input type="checkbox" value="Интерскол">Интерскол
-          </li>    
-          <li>
-            <input type="checkbox" value="Makita">Makita
-          </li>    
-          <li>
-            <input type="checkbox" value="Dewalt">Dewalt
-          </li>    
-          <li>
-            <input type="checkbox" value="Hitachi">Hitachi
-          </li>        
-        </ul>
+        <form action="">
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" value="Bosch">Bosch
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="Интерскол">Интерскол
+              </label>
+            </li>    
+            <li>
+              <label>
+                <input type="checkbox" value="Makita">Makita
+              </label>
+            </li>    
+            <li>
+              <label>
+                <input type="checkbox" value="Dewalt">Dewalt
+              </label>
+            </li>    
+            <li>
+              <input type="checkbox" value="Hitachi">Hitachi
+            </li>        
+          </ul>
+        </form>  
 
         <h2>Питание</h2>
 
-        <ul>
-          <li>
-            <input type="checkbox" value="Аккумуляторные">Аккумуляторные
-          </li>
-          <li>
-            <input type="checkbox" value="Сетевые">Сетевые
-          </li>          
+        <form action="">
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" value="Аккумуляторные">Аккумуляторные
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="Сетевые">Сетевые
+              </label>
+            </li>          
         </ul>
+        </form>
 
         <button type="button">Показать</button>
-      </section>
+      </aside>
 
       <article>
         <h2>Пара слов о перфораторах</h2>
