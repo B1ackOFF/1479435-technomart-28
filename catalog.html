@@ -267,7 +267,7 @@
           <p>Товар добавлен в корзину!</p>
           <a href="blank.html">Оформить заказ</a>
           <button type="button">Продолжить покупки</button>
-          <button type="button">+</button>
+          <button type="button">Закрыть</button>
         </div>
       
         <ul>
@@ -289,60 +289,51 @@
       <aside>
         <p>Фильтр:</p>
         
-        <fieldset>
-          <legend>Производители:</legend>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <h2>Производители:</h2>  
 
-          <form action="" method="get">
             <ul>
               <li>
-                <label>
-                  <input type="checkbox" value="Bosch">Bosch
-                </label>
+                <input type="checkbox" value="Bosch" id="bosch-id" name="brands">
+                <label for="bosch-id">Bosch</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" value="Интерскол">Интерскол
-                </label>
+                <input type="checkbox" value="Интерскол" id="intersrol-id" name="brands">
+                <label for="intersrol-id">Интерскол</label>
               </li>    
               <li>
-                <label>
-                  <input type="checkbox" value="Makita">Makita
-                </label>
+                <input type="checkbox" value="Makita" id="makita-id" name="brands">
+                <label for="makita-id">Makita</label>
               </li>    
               <li>
-                <label>
-                  <input type="checkbox" value="Dewalt">Dewalt
-                </label>
+                <input type="checkbox" value="Dewalt" id="dewalt-id" name="brands">
+                <label for="dewalt-id">Dewalt</label>
               </li>    
               <li>
-                <label>
-                  <input type="checkbox" value="Hitachi">Hitachi
-                </label>
+                <input type="checkbox" value="Hitachi" id="hitachi-id" name="brands">
+                <label for="hitachi-id">Hitachi</label>
               </li>        
             </ul>
-          </form>  
-        </fieldset>
+          </fieldset>
 
-        <fieldset>
-          <legend>Питание:</legend>
-
-          <form action="" method="get">
+          <fieldset>
+            <h2>Питание:</h2>
+         
             <ul>
               <li>
-                <label>
-                  <input type="radio" value="Аккумуляторные" checked>Аккумуляторные
-                </label>
+                <input type="radio" value="Аккумуляторные" id="accumulator-id" name="power">
+                <label for="accumulator-id">Аккумуляторные</label>
               </li>
               <li>
-                <label>
-                  <input type="radio" value="Сетевые">Сетевые
-                </label>
+                <input type="radio" value="Сетевые" id="base-id" name="power">
+                <label for="base-id">Сетевые</label> 
               </li>          
             </ul>
-          </form>
-        </fieldset>
+          </fieldset>
 
-        <button type="button">Показать</button>
+          <button type="submit">Показать</button>
+        </form>
       </aside>
 
       <article>
