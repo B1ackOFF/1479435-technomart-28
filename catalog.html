@@ -261,6 +261,14 @@
             </article>   
           </li>
         </ul> 
+
+        <div>
+          <img src="./img/image.html/catalog-main-popup-icon-addedToCart.svg" alt="Товар добавлен в корзину" width="66" height="66">
+          <p>Товар добавлен в корзину!</p>
+          <a href="blank.html">Оформить заказ</a>
+          <button type="button">Продолжить покупки</button>
+          <button type="button">+</button>
+        </div>
       
         <ul>
           <li>
@@ -279,54 +287,60 @@
       </section>
       
       <aside>
-        <span>Фильтр</span>
+        <p>Фильтр:</p>
+        
+        <fieldset>
+          <legend>Производители:</legend>
 
-        <h2>Производители</h2>
+          <form action="" method="get">
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" value="Bosch">Bosch
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" value="Интерскол">Интерскол
+                </label>
+              </li>    
+              <li>
+                <label>
+                  <input type="checkbox" value="Makita">Makita
+                </label>
+              </li>    
+              <li>
+                <label>
+                  <input type="checkbox" value="Dewalt">Dewalt
+                </label>
+              </li>    
+              <li>
+                <label>
+                  <input type="checkbox" value="Hitachi">Hitachi
+                </label>
+              </li>        
+            </ul>
+          </form>  
+        </fieldset>
 
-        <form action="">
-          <ul>
-            <li>
-              <label>
-                <input type="checkbox" value="Bosch">Bosch
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" value="Интерскол">Интерскол
-              </label>
-            </li>    
-            <li>
-              <label>
-                <input type="checkbox" value="Makita">Makita
-              </label>
-            </li>    
-            <li>
-              <label>
-                <input type="checkbox" value="Dewalt">Dewalt
-              </label>
-            </li>    
-            <li>
-              <input type="checkbox" value="Hitachi">Hitachi
-            </li>        
-          </ul>
-        </form>  
+        <fieldset>
+          <legend>Питание:</legend>
 
-        <h2>Питание</h2>
-
-        <form action="">
-          <ul>
-            <li>
-              <label>
-                <input type="checkbox" value="Аккумуляторные">Аккумуляторные
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" value="Сетевые">Сетевые
-              </label>
-            </li>          
-        </ul>
-        </form>
+          <form action="" method="get">
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" value="Аккумуляторные" checked>Аккумуляторные
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" value="Сетевые">Сетевые
+                </label>
+              </li>          
+            </ul>
+          </form>
+        </fieldset>
 
         <button type="button">Показать</button>
       </aside>
