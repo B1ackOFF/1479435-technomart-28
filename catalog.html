@@ -301,11 +301,12 @@
               <button type="button" class="min"></button>
             </div>
             <p>
-              <input type="number" name="starting-price" min="0" max="30000" step="10" value="0" placeholder="0">
+              <label for="starting-price-id" class="visually-hidden">минимальное значение</label>
+              <input type="number" id="starting-price-id" name="starting-price" min="0" max="30000" step="10" value="0" placeholder="0">
             </p>
-            <p>-</p>
             <p>
-              <input type="number" name="final-price" min="0" max="30000" step="10" value="30000" placeholder="30000">
+              <label for="final-price-id" class="visually-hidden">максимальное значение</label>
+              <input type="number" id="final-price-id" name="final-price" min="0" max="30000" step="10" value="30000" placeholder="30000">
             </p>
           </fieldset>
     
