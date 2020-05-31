@@ -4,42 +4,45 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Стройматериалы, Техномарт, строительство, ремонт, декор, дизайн дома, низкие цены, купить, гипермаркет, интернет-магазин, каталог, заказать онлайн " />
     <meta name="description" content="Товары для строительства и ремонта с доставкой. Разгрузка строительных материалов и подъем на этаж. Онлайн оплата." />
-    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="./css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
     <title>HTML Academy: Техномарт</title>
   </head>
   <body> 
-    <header>
-      <p>
+    <header class="header">
+      <p class="header-logo">
         <a href="index.html"><img src="./img/image.html/header-icon-logo.svg" width="220" height="47" alt="Техномаркт логотип" /></a>
       </p>
 
-      <form action="" method="post" class="search-box">
+      <form class="header-search" action="" method="post" class="search-box">
         <button type="submit" class="search-btn"></button>
         <label for="search-id" class="visually-hidden">Поиск</label>
         <input type="text" id="search-id" class="search-text" placeholder="Поиск:" required> 
       </form>
 
-      <ul>  
+      <ul class="header-menu">  
         <li>
-          <a href='blank.html'>Закладки:</a>
+          <a href='blank.html'>Закладки: <span>0</span></a>
         </li> 
         <li>
-          <a href='blank.html'>Корзина:</a>
+          <a href='blank.html'>Корзина: <span>0</span></a>
         </li>
         <li>
           <a href='blank.html'>Оформить заказ</a>
         </li>
       </ul>
 
-      <p>Интернет магазин строительных материалов и инструментов для ремонта</p>
+      <p class="header-title">Интернет магазин строительных материалов и инструментов для ремонта</p>
 
-      <p>
+      <p class="header-phone">
         <a href="tel:+78125550555">+7(812)555-05-55</a>  
       </p>
 
-      <p>г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
+      <p class="header-address">г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
 
-      <ul>
+      <ul class="user-navigation">
         <li>
           <a href="blank.html">Войти</a>
         </li>
@@ -48,7 +51,7 @@
         </li>
       </ul>
 
-      <nav>
+      <nav class="navigation">
         <ul>
           <li>
             <a href="blank.html">Главная</a>
@@ -75,8 +78,8 @@
       </nav>
 
     </header>
-    <main>
-      <section>
+    <main class="main">
+      <section class="first-screen">
         <h1 class="visually-hidden">Интернет магазин строительных материалов и инструментов &#171;Техномарт&#187;</h1>
 
         <ul>
@@ -260,14 +263,14 @@
         </ul>
       </section>
 
-      <section>
+      <section class="company">
         <h2>Компания &#171;Техномарт&#187;</h2>
 
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
 
         <p>Мы можем доставить Ваш товар в самые отдаленные точки России! Техномаркт работает со многими транспортными компаниями:</p>
 
-        <ul>
+        <ul class="partners">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
@@ -276,7 +279,7 @@
         <a href="blank.html">Подробнее о компании</a>
       </section>
 
-      <section>
+      <section class="contacts">
         <h2>Контакты</h2>
 
         <p>Вы можете забрать товар сами заехав в наш офис:</p>
@@ -285,7 +288,7 @@
         
         <a href="blank.html">Заблудились? Напишите нам!</a>
 
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post" class="write-us">
           <label for="name-id">Ваше имя:</label>
           <input type="text" placeholder="Имя Фамилия" name="name" id="name-id" required>
 
@@ -299,21 +302,21 @@
           <button type="button">Закрыть</button>
         </form>
 
-        <div>
+        <div class="big-map">
           <img src="./img/image.html/main-map-big.jpg" width="943" height="449" alt="Схема проезда">
           <button type="button">Закрыть</button>
         </div>
 
       </section>
     </main>
-    <footer> 
+    <footer class="footer"> 
       <p>
         <a href="index.html"><img src="./img/image.html/footer-icon-logo.svg" width="220" height="68" alt="Техномаркт логотип" /></a>
       </p>
 
-      <p>г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
+      <p>г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
      
-      <ul>
+      <ul class="footer-navigation">
         <li>
           <a href="blank.html">Компания</a>
         </li>
@@ -345,15 +348,15 @@
 
       <p>&#169;2010-2019 Компания &#171;Техномарт&#187; Все права защищены</p>
 
-      <ul>
+      <ul class="share">
         <li>
-          <a href="#">Вконтакте</a>
+          <a href="#" class="social social-vk"><span class="visually-hidden">Вконтакте</span></a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a href="#" class="social social-fb"><span class="visually-hidden">Фейсбук</span></a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a href="#" class="social social-ins"><span class="visually-hidden">Инстаграм</span></a>
         </li>
       </ul>
       
@@ -363,7 +366,7 @@
       </p>
 
       <p>
-        Разработано:
+        Разработано &mdash;
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>  
