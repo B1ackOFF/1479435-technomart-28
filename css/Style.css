@@ -61,6 +61,10 @@ body {
   background-color: var(--basic-background); 
 }
 
+.list-style-none{
+  list-style: none;
+}
+
 .search-btn {
   width: 30px;
   height: 30px;
@@ -86,10 +90,6 @@ body {
   background-position: 5px center;
   background-repeat: no-repeat;
   padding-left: 30px;
-}
-
-.header-submenu {
-  list-style: none;
 }
 
 .bookmarks{
@@ -149,7 +149,6 @@ body {
   min-height: 45px;
   background-color:  var(--basic-white);
   line-height: 45px;
-  list-style: none;
 }
 
 .entry-container {
@@ -158,21 +157,17 @@ body {
   background-size: 20px 17px;
   background-position: 5px center;
   background-repeat: no-repeat;
-
 }
 
-.entry {
+.entry,
+.reg {
   color: var(--basic-black);
   font-size: 21px;  
+  text-align: center;
 }
 
 .reg-container {
   width: 150px;
-}
-
-.reg {
-  color: var(--basic-black);
-  font-size: 21px;  
 }
 
 .name-container {
@@ -224,7 +219,6 @@ body {
 .nav-list{ 
   display: flex;
   flex-direction: row;
-  list-style: none;
   justify-content: space-around;
 }
 
@@ -237,10 +231,6 @@ body {
   font-family: "PT Sans", "Arial" sans-serif;
   width: 478px;
   font-size: 13px;
-}
-
-.partners{
-  list-style: none;
 }
 
 .partner {
@@ -300,10 +290,6 @@ body {
   color: var(--basic-white);
 }
 
-.footer-navigation {
-  list-style: none;
-}
-
 .yellow{
   color: var(--special-yellow);
 }
@@ -319,15 +305,13 @@ body {
 .share-part {
   display: inline-block;
   vertical-align: middle;
-  list-style: none;
 }
 
 .social {
-  display: inline-block;
+  display:block;
   width: 44px;
   min-height: 44px;
   margin-right: 4px;
-  vertical-align: middle;
   background-color: var(--basic-darkgrey);
   border-radius: 50%;
   background-position: center center;
@@ -361,7 +345,6 @@ body {
   width: 98px;
 }
 
-
 /*catalog*/
 
 .breadcrumb{
@@ -370,7 +353,6 @@ body {
   background-position: 0 center;
   background-repeat: no-repeat;
   position: relative;
-  list-style: none;
 }
 
 .breadcrumb-link {
@@ -406,7 +388,6 @@ body {
 border: 1px solid var(--special-lightgray);
 width: 220px;
 height: 318px;
-list-style: none;
 }
 
 .content-img {
@@ -416,7 +397,7 @@ list-style: none;
   margin-top: 22px;
 }
 
-.content-list h3 {
+.content-name{
 font-family: "PT Sans", "Arial" sans-serif;
 font-weight: bold;
 font-size: 18px;
@@ -525,7 +506,6 @@ margin-top: 28px;
 
 .filter {
   border: none;
-  list-style: none;
 }
 
 .filter-manufacturers,
@@ -553,11 +533,6 @@ margin-top: 28px;
   border: 1px solid var(--special-lightgray);
 }
 
-.checkbox,
-.radio {
-  list-style: none;
-}
-
 .checkbox input[type=checkbox], 
 .radio input[type=radio] {
   position: absolute;
@@ -572,18 +547,20 @@ margin-top: 28px;
 
 .checkbox label,
 .radio label {
-	display: inline-block;
+  display: inline-block;
+  vertical-align: middle;
 	cursor: pointer;
 	position: relative;
   padding-left: 35px;
   margin-bottom: 16px;
 	line-height: 18px;
-	user-select: none;
+  user-select: none;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .checkbox label:before {
   content: "";
-	display: inline-block;
 	width: 27px;
 	height: 23px;
 	position: absolute;
@@ -596,74 +573,50 @@ margin-top: 28px;
 
 .checkbox label:hover:before {
   background-image: url("../img/image.html/catalog-aside-checkbox-off-hover.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .checkbox input[type=checkbox]:disabled + label:before {
   background-image: url("../img/image.html/catalog-aside-checkbox-off-disabled.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .checkbox input[type=checkbox]:checked + label:before {
   background-image: url("../img/image.html/catalog-aside-checkbox-on-static.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .checkbox input[type=checkbox]:checked + label:hover:before {
   background-image: url("../img/image.html/catalog-aside-checkbox-on-hover.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .checkbox input[type=checkbox]:checked:disabled + label:before {
   background-image: url("../img/image.html/catalog-aside-checkbox-on-disabled.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .radio label:before {
 	content: "";
-	display: inline-block;
 	width: 25px;
 	height: 25px;
 	position: absolute;
 	left: 0;
 	bottom: 0;
   background-image: url("../img/image.html/catalog-aside-radio-off-static.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .radio label:hover:before {
   background-image: url("../img/image.html/catalog-aside-radio-off-hover.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .radio input[type=radio]:disabled + label:before {
   background-image: url("../img/image.html/catalog-aside-radio-off-disabled.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .radio input[type=radio]:checked + label:before {
   background-image: url("../img/image.html/catalog-aside-radio-on-static.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .radio input[type=radio]:checked + label:hover:before {
   background-image: url("../img/image.html/catalog-aside-radio-on-hover.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .radio input[type=radio]:checked:disabled + label:before {
   background-image: url("../img/image.html/catalog-aside-radio-on-disabled.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
-
