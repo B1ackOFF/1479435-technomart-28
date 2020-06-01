@@ -161,10 +161,11 @@
   
   .entry,
   .reg {
-    display: block;
+    display: flex;
+    justify-content: center;
     color: var(--basic-black);
     font-size: 21px;  
-    text-align: center;
+   
   }
   
   .reg-container {
