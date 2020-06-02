@@ -61,11 +61,11 @@
     background-color: var(--basic-background); 
   }
   
-  .list-style-none{
+  .list-reset{
     list-style: none;
   }
   
-  .search-btn {
+  .header-search-btn {
     width: 30px;
     height: 30px;
     background-image: url("../img/image.html/header-icon-search.svg");
@@ -75,34 +75,34 @@
     border: none;
   }
   
-  .search-text{
+  .header-search-text{
     color: var(--basic-white);
     padding: 5px;
     border: none;
     width: 240px;
   }
   
-  .search-text::placeholder {
+  .header-search-text::placeholder {
     color: var(--basic-white);
   }
   
-  .header-submenu:not(.order) {
+  .header-menu-item:not(.header-menu-order) {
     background-position: 5px center;
     background-repeat: no-repeat;
     padding-left: 30px;
   }
   
-  .bookmarks{
+  .header-menu-bookmarks{
     background-image: url("../img/image.html/header-icon-bookmark.svg");
     background-size: 14px 16px;
   }
   
-  .cart {
+  .header-menu-cart {
     background-image: url("../img/image.html/header-icon-cart.svg");
     background-size: 15px 15px;
   }  
   
-  .order {
+  .header-menu-order {
     width: 150px;
     min-height: 42px;
     background-color: var(--basic-green);
@@ -132,7 +132,7 @@
     line-height: 45px;
   }
   
-  .header-phone .tell {
+  .header-phone-link {
     color: var(--basic-red);
     font-weight: bold;
     font-size: 21px;
@@ -151,7 +151,7 @@
     line-height: 45px;
   }
   
-  .entry-container {
+  .user-navigation-entry-container {
     width: 121px;
     background-image: url("../img/image.html/header-icon-login.svg");
     background-size: 20px 17px;
@@ -159,20 +159,19 @@
     background-repeat: no-repeat;
   }
   
-  .entry,
-  .reg {
+  .user-navigation-entry,
+  .user-navigation-reg {
     display: flex;
     justify-content: center;
     color: var(--basic-black);
     font-size: 21px;  
-   
   }
   
-  .reg-container {
+  .user-navigation-reg-container {
     width: 150px;
   }
   
-  .name-container {
+  .user-navigation-active-name-container {
     width: 299px;
     background-image: url("../img/image.html/header-icon-person.svg"), url("../img/image.html/header-icon-login.svg");
     background-size: 20px 18px;
@@ -182,25 +181,25 @@
     text-align: center;
   }
   
-  .user-name {
+  .user-navigation-active-user-name {
     color: var(--basic-black);
     font-size: 21px;  
   }
   
-  .my-orders,
-  .private {
+  .user-navigation-active-my-orders,
+  .user-navigation-active-private {
     color: var(--basic-darkgrey);
     font-size: 16px;
     line-height: 18px;
     position: relative;
   }
   
-  .orders-container,
-  .private-container {
+  .user-navigation-active-orders-container,
+  .user-navigation-active-private-container {
     background-color: transparent;
   }
   
-  .my-orders::before {
+  .user-navigation-active-my-orders::before {
     content: "";
     background-color: var(--basic-darkgrey);
     width: 6px;
@@ -211,7 +210,7 @@
     left: 88px;
   }
   
-  .navigation {
+  .nav {
     width: 940px;
     min-height: 60px;
     background-color: var(--basic-grey);
@@ -235,7 +234,7 @@
     font-size: 13px;
   }
   
-  .partner {
+  .company-partners-item {
     background-image: url("../img/image.html/main-li-partners.png");
     background-size: 25px 2px;
     background-position: 5px center;
@@ -243,7 +242,7 @@
     padding-left: 40px;
   }
   
-  .details {
+  .company-details {
     display: block;
     width: 220px;
     min-height: 38px;
@@ -255,13 +254,13 @@
     line-height: 38px;
   }
   
-  .mini-map {
+  .contacts-mini-map {
     display: block;
     width: 300px;
     min-height: 158px;
   }
   
-  .stray {
+  .contacts-stray {
     display: block;
     width: 300px;
     min-height: 38px;
@@ -273,14 +272,18 @@
     line-height: 38px;
   }
   
-  .write-us {
+  .contacts-write-us {
     display: none;
   }
   
-  .big-map {
+  .contacts--big-map {
     display: none;
   }
   
+  .footer {
+    background-color: var(--basic-grey);
+  }
+
   .footer-logo-img{
     width: 220px;
     min-height: 68px;
@@ -296,7 +299,7 @@
     color: var(--special-yellow);
   }
   
-  .tehnomart {
+  .footer-tehnomart {
     width: 227px;
     min-height: 37px;
     font-size: 16px;
@@ -304,12 +307,12 @@
     color: var(--basic-white);
   }
   
-  .share-part {
+  .footer-share-item {
     display: inline-block;
     vertical-align: middle;
   }
   
-  .social {
+  .footer-share-link {
     display:block;
     width: 44px;
     min-height: 44px;
@@ -349,7 +352,7 @@
   
   /*catalog*/
   
-  .breadcrumb{
+  .breadcrumbs-item{
     background-image: url("../img/image.html/catalog-main-icon-right-small.svg");
     background-size: 8px 12px;
     background-position: 0 center;
@@ -357,7 +360,7 @@
     position: relative;
   }
   
-  .breadcrumb-link {
+  .breadcrumbs-link {
     font-family: "PT Sans", "Arial" sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -366,7 +369,7 @@
     padding-left: 18px;
   }
   
-  .breadcrumb:first-child .breadcrumb-link::after {
+  .breadcrumbs-item:first-child .breadcrumbs-link::after {
     content: "";
     background-image: url("../img/image.html/catalog-main-icon-home.svg");
     width: 14px;
@@ -376,7 +379,7 @@
     left: -20px;
   }
   
-  .big-heading {
+  .catalog-big-heading {
     font-size: 30px;
     padding: 29px;
     text-transform: uppercase;
@@ -460,7 +463,7 @@
     transform: rotate(45deg); 
   }
   
-  .buttons-to-buy {
+  .content-buttons-to-buy {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -473,7 +476,7 @@
     z-index: 10;
   }
   
-  .buy {
+  .content-buy {
     display: flex;
     justify-content: center;
     padding-left: 15px;
@@ -487,7 +490,7 @@
     background-repeat: no-repeat;
   }
   
-  .note {
+  .content-note {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -520,13 +523,13 @@
     font-weight: bold;
   }
   
-  .manufacturers label,
-  .voltage label {
+  .filter-manufacturers label,
+  .filter-voltage label {
     font-size: 15px;
     font-weight: bold;
   }
   
-  .show-btn {
+  .filter-show {
     width: 220px;
     height: 38px;
     font-family: "PT Sans", "Arial" sans-serif;
@@ -551,11 +554,11 @@
   .radio label {
     display: inline-block;
     vertical-align: middle;
-      cursor: pointer;
-      position: relative;
+    cursor: pointer;
+    position: relative;
     padding-left: 35px;
     margin-bottom: 16px;
-      line-height: 18px;
+     line-height: 18px;
     user-select: none;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -563,11 +566,11 @@
   
   .checkbox label:before {
     content: "";
-      width: 27px;
-      height: 23px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     background-image: url("../img/image.html/catalog-aside-checkbox-off-static.svg");
     background-position: 0 0;
     background-repeat: no-repeat; 
@@ -594,12 +597,12 @@
   }
   
   .radio label:before {
-      content: "";
-      width: 25px;
-      height: 25px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     background-image: url("../img/image.html/catalog-aside-radio-off-static.svg");
   }
   
