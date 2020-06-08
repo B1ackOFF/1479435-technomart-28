@@ -1,87 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="site" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Стройматериалы, Техномарт, строительство, ремонт, декор, дизайн дома, низкие цены, купить, гипермаркет, интернет-магазин, каталог, заказать онлайн " />
     <meta name="description" content="Товары для строительства и ремонта с доставкой. Разгрузка строительных материалов и подъем на этаж. Онлайн оплата." />
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="css/normalize-zip.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="css/normalize-min.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <title>HTML Academy: Техномарт</title>
   </head>
-  <body> 
+  <body class="site-body"> 
     <header class="header">
-      <p class="header-logo">
-        <a href="index.html"><img src="./img/image.html/header-icon-logo.svg" width="220" height="47" alt="Техномаркт логотип" /></a>
-      </p>
+      <div class="header-top">
+        <p class="header-logo">
+          <a href="index.html"><img src="./img/image.html/header-icon-logo.svg" width="220" height="47" alt="Техномаркт логотип" /></a>
+        </p>
 
-      <form class="header-search" action="" method="post" class="search-box">
-        <button type="submit" class="header-search-btn"><span class="visually-hidden">Начать поиск</span></button>
-        <label for="search-id" class="visually-hidden">Поиск</label>
-        <input type="text" id="search-id" class="header-search-text" placeholder="Поиск:" required> 
-      </form>
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+          <button type="submit" class="header-search-btn"><span class="visually-hidden">Начать поиск</span></button>
+          <label for="search-id" class="visually-hidden">Поиск</label>
+          <input type="text" id="search-id" class="header-search-text" placeholder="Поиск:" required> 
+        </form>
 
-      <ul class="header-menu list-reset">  
-        <li class="header-menu-bookmarks header-menu-item">
-          <a href='blank.html'>Закладки:</a>
-        </li> 
-        <li class="header-menu-cart header-menu-item">
-          <a href='blank.html'>Корзина:</a>
-        </li>
-        <li class="header-menu-order header-menu-item">
-          <a href='blank.html'>Оформить заказ</a>
-        </li>
-      </ul>
+        <ul class="header-menu list-reset">  
+          <li class="header-menu-bookmarks header-menu-item">
+            <a href='blank.html'>Закладки: 0</a>
+          </li> 
+          <li class="header-menu-cart header-menu-item">
+            <a href='blank.html'>Корзина: 0</a>
+          </li>
+          <li class="header-menu-order header-menu-item">
+            <a href='blank.html'>Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
 
-      <p class="header-title">Интернет магазин строительных материалов и инструментов для ремонта</p>
+      <div class="header-middle">
+        <p class="header-title pre-line">Интернет-магазин
+          строительных материалов
+          и инструментов для ремонта
+        </p>
 
-      <p class="header-phone">
-        <a class="header-phone-link" href="tel:+78125550555">+7(812)555-05-55</a>  
-      </p>
+        <div class="header-connection">
+          <p class="header-phone">
+            <a class="header-phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>  
+          </p>
 
-      <p class="header-address">г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
+          <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        </div>
 
-      <ul class="user-navigation-active list-reset">
-        <li class="user-navigation-active-name-container cabinet">
-          <a class="user-navigation-active-user-name" href="blank.html">Имя пользователя</a>
-        </li>
-        <li class="user-navigation-active-orders-container cabinet">
-          <a class="user-navigation-active-my-orders" href="blank.html">Мои заказы</a>
-        </li>
-        <li class="user-navigation-active-private-container cabinet">
-          <a class="user-navigation-active-private" href="blank.html">Личный кабинет</a>
-        </li>
-      </ul>
+        <ul class="user-navigation-active list-reset">
+          <li class="user-navigation-active-name-container cabinet">
+            <a class="user-navigation-active-user-name" href="blank.html">Равшан Джамшутович</a>
+          </li>
+          <li class="user-navigation-active-orders-container cabinet">
+            <a class="user-navigation-active-orders" href="blank.html">Мои заказы</a>
+          </li>
+          <li class="user-navigation-active-private-container cabinet">
+            <a class="user-navigation-active-private" href="blank.html">Личный кабинет</a>
+          </li>
+        </ul>
+      </div>
 
       <nav class="nav">
         <ul class="nav-list list-reset">
-          <li class="nav-list-container">
-            <a class="nav-list-home" href="blank.html">Главная</a>
+          <li class="nav-list-container nav-list-container-home">
+            <a class="nav-list-home nav-list-link" href="index.html">Главная</a>
           </li>
-          <li class="nav-list-container">
-            <a class="nav-list-company" href="blank.html">Компания</a>
+          <li class="nav-list-container nav-list-container-company">
+            <a class="nav-list-company nav-list-link" href="blank.html">Компания</a>
           </li>
-          <li class="nav-list-container">
-            <a class="nav-list-catalog" href="catalog.html">Каталог</a>
+          <li class="nav-list-container nav-list-container-catalog">
+            <a class="nav-list-catalog nav-list-link" href="catalog.html">Каталог</a>
           </li>
-          <li class="nav-list-container">
-            <a class="nav-list-news" href="blank.html">Новости</a>
+          <li class="nav-list-container nav-list-container-news">
+            <a class="nav-list-news nav-list-link" href="blank.html">Новости</a>
           </li>
-          <li class="nav-list-container">
-            <a class="nav-list-offers" href="blank.html">Спецпредложения</a>
+          <li class="nav-list-container nav-list-container-offers">
+            <a class="nav-list-offers nav-list-link" href="blank.html">Спецпредложения</a>
           </li>
-          <li class="nav-list-container">
-            <a class="nav-list-delivery" href="blank.html">Доставка</a>
+          <li class="nav-list-container nav-list-container-delivery">
+            <a class="nav-list-delivery nav-list-link" href="blank.html">Доставка</a>
           </li>
-          <li class="nav-list-container">
-            <a class="nav-list-contect" href="blank.html">Контакты</a>
+          <li class="nav-list-container nav-list-container-contact">
+            <a class="nav-list-contact nav-list-link" href="blank.html">Контакты</a>
           </li>
         </ul>
       </nav>
 
     </header>
-    <main>
+    <main class="catalog-main">
+      
       <ul class="breadcrumbs list-reset">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
@@ -94,13 +103,15 @@
         </li>    
       </ul>    
 
+      <h1 class="catalog-big-heading">Перфораторы</h1>
+
       <section class="catalog">
-        <header>  
-          <h1 class="catalog-big-heading">Перфораторы</h1>
+        <header class="catalog-header">  
+          <h2 class="visually-hidden">Перфораторы</h2>
 
           <ul class="sorting list-reset">
             <li class="sorting-text">
-              Сортировать по:
+              Сортировка:
             </li>
             <li class="sorting-price">
               <a class="sorting-link sorting-active" href="blank.html">По цене</a>
@@ -282,21 +293,23 @@
           <button type="button">Продолжить покупки</button>
           <button type="button">Закрыть</button>
         </div>
-      
-        <ul class="page-list list-reset">
-          <li class="page-list-item page-active">
-            <a class="page-list-link" href="blank.html">1</a>
-          </li>
-          <li class="page-list-item">
-            <a class="page-list-link" href="blank.html">2</a>
-          </li>
-          <li class="page-list-item">
-            <a class="page-list-link" href="blank.html">3</a>
-          </li>
-          <li class="page-list-item">
-            <a class="page-list-link" href="blank.html">Следующая</a>
-          </li>
-        </ul>
+
+        <div class="page-list-container">
+          <ul class="page-list list-reset">
+            <li class="page-list-item page-active">
+              <a class="page-list-link" href="blank.html">1</a>
+            </li>
+            <li class="page-list-item">
+              <a class="page-list-link" href="blank.html">2</a>
+            </li>
+            <li class="page-list-item">
+              <a class="page-list-link" href="blank.html">3</a>
+            </li>
+            <li class="page-list-item">
+              <a class="page-list-link" href="blank.html">Следующая</a>
+            </li>
+          </ul>
+        </div>
       </section>
       
       <aside class="aside">
@@ -370,73 +383,81 @@
           <button class="filter-show" type="submit">Показать</button>
         </form>
       </aside>
+      </div>
 
       <article class="article">
-        <h2 class="catalog-big-heading article-heding">Пара слов о перфораторах</h2>
-        <p class="article-text">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне, камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        <h2 class="article-heading">Пара слов о перфораторах</h2>
+        <p class="article-text pre-line">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне, камне. 
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+          В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
       </article>
     </main>
 
     <footer class="footer"> 
-      <p class="footer-logo">
-        <a href="#"><img class="footer-logo-img" src="./img/image.html/footer-icon-logo.svg" width="220" height="68" alt="Техномаркт логотип" /></a>
-      </p>
+      <div class="footer-top-left"">
+        <p class="footer-logo">
+          <a href="#"><img class="footer-logo-img" src="./img/image.html/footer-icon-logo.svg" width="220" height="68" alt="Техномаркт логотип" /></a>
+        </p>
 
-      <p class="footer-address">г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
-     
+        <address class="footer-address">г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></address>
+      </div>
+
       <ul class="footer-navigation list-reset">
-        <li>
+        <li class="footer-navigation-item">
           <a href="blank.html">Компания</a>
         </li>
-        <li>
+        <li class="footer-navigation-item">
           <a href="blank.html">Новости</a>
         </li>
-        <li>
+        <li class="footer-navigation-item">
           <a href="catalog.html">Каталог</a>
         </li>
-        <li>
+        <li class="footer-navigation-item">
           <a href="blank.html">Доставка</a>
         </li>
-        <li>
+        <li class="footer-navigation-item">
           <a href="blank.html">Контакты</a>
         </li>
-        <li>
+        <li class="footer-navigation-item">
           <a class="yellow" href="blank.html">Материалы</a>
         </li>
-        <li>
+        <li class="footer-navigation-item">
           <a class="yellow" href="blank.html">Техника</a>
         </li>
-        <li>
-          <a class="yellow" href="blank.html">Инструменты</a>
+        <li class="footer-navigation-item">
+          <a class="yellow" href="blank.html">Инструмент</a>
         </li>
-        <li>
+        <li class="footer-navigation-item">
           <a class="yellow" href="blank.html">Спецпредложения</a>
         </li>
       </ul>
 
-      <p class="footer-tehnomart">&#169;2010-2019 Компания &#171;Техномарт&#187; Все права защищены</p>
+      <div class="footer-bottom">
+        <p class="footer-tehnomart">&#169; 2010-2019 Компания &#171;Техномарт&#187; Все права защищены</p>
 
-      <ul class="footer-share list-reset">
-        <li class="footer-share-item">
-          <a href="#" class="footer-share-link social-vk"><span class="visually-hidden">Вконтакте</span></a>
-        </li>
-        <li class="footer-share-item">
-          <a href="#" class="footer-share-link social-fb"><span class="visually-hidden">Фейсбук</span></a>
-        </li>
-        <li class="footer-share-item">
-          <a href="#" class="footer-share-link social-ins"><span class="visually-hidden">Инстаграм</span></a>
-        </li>
-      </ul>
+        <ul class="footer-share list-reset">
+          <li class="footer-share-item">
+            <a href="#" class="footer-share-link social-vk"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li class="footer-share-item">
+            <a href="#" class="footer-share-link social-fb"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li class="footer-share-item">
+            <a href="#" class="footer-share-link social-ins"><span class="visually-hidden">Инстаграм</span></a>
+          </li>
+        </ul>
       
-      <p class="footer-info">
+        <p class="footer-info">
         Обратная связь
-        <a class="yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
+         <a class="yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
 
-      <p class="footer-info academy">
-        Разработано &mdash;
-        <a class="yellow" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </p>
-    </footer> 
+        <p class="footer-info academy">
+          Разработано &mdash;
+          <a class="yellow" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </p>
+      </div>
+    </footer>  
   </body>
 </html>
