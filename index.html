@@ -11,31 +11,33 @@
   </head>
   <body class="site-body"> 
     <header class="header">
-      <div class="header-top">
-        <p class="header-logo">
-          <a href="#"><img src="./img/image.html/header-icon-logo.svg" width="220" height="47" alt="Техномаркт логотип" /></a>
-        </p>
+      <div class="header-background">
+        <div class="header-top wrapper">
+          <p class="header-logo">
+            <a href="#"><img src="./img/image.html/header-icon-logo.svg" width="220" height="47" alt="Техномаркт логотип" /></a>
+          </p>
 
-        <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-          <button type="submit" class="header-search-btn"><span class="visually-hidden">Начать поиск</span></button>
-          <label for="search-id" class="visually-hidden">Поиск</label>
-          <input type="text" id="search-id" class="header-search-text" placeholder="Поиск:" required> 
-        </form>
+          <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+            <button type="submit" class="header-search-btn"><span class="visually-hidden">Начать поиск</span></button>
+            <label for="search-id" class="visually-hidden">Поиск</label>
+            <input type="text" id="search-id" class="header-search-text" placeholder="Поиск:" required> 
+          </form>
 
-        <ul class="header-menu list-reset">  
-          <li class="header-menu-bookmarks header-menu-item">
-            <a href='blank.html'>Закладки: 0</a>
-          </li> 
-          <li class="header-menu-cart header-menu-item">
-            <a href='blank.html'>Корзина: 0</a>
-          </li>
-          <li class="header-menu-order header-menu-item">
-            <a href='blank.html'>Оформить заказ</a>
-          </li>
-        </ul>
+          <ul class="header-menu list-reset">  
+            <li class="header-menu-bookmarks header-menu-item">
+              <a class="header-menu-link pd-left" href='blank.html'>Закладки: 0</a>
+            </li> 
+            <li class="header-menu-cart header-menu-item">
+              <a class="header-menu-link pd-left" href='blank.html'>Корзина: 0</a>
+            </li>
+            <li class="header-menu-order header-menu-item">
+              <a class="header-menu-link" href='blank.html'>Оформить заказ</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="header-middle">
+      <div class="header-middle wrapper">
         <p class="header-title pre-line">Интернет-магазин 
           строительных материалов
           и инструментов для ремонта
@@ -44,9 +46,8 @@
         <div class="header-connection">
           <p class="header-phone">
             <a class="header-phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>  
+            <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           </p>
-
-          <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
 
         <ul class="user-navigation list-reset">
@@ -60,7 +61,7 @@
       </div>
 
 
-      <nav class="nav">
+      <nav class="nav wrapper">
         <ul class="nav-list list-reset">
           <li class="nav-list-container nav-list-container-home">
             <a class="nav-list-home nav-list-link" href="index.html">Главная</a>
@@ -87,7 +88,7 @@
       </nav>
 
     </header>
-    <main class="main">
+    <main class="main wrapper">
       <section class="main-blocks">
         <h1 class="visually-hidden">Интернет магазин строительных материалов и инструментов &#171;Техномарт&#187;</h1>
 
@@ -329,68 +330,72 @@
     </main>
 
     <footer class="footer"> 
-      <div class="footer-top-left"">
-        <p class="footer-logo">
-          <a href="#"><img class="footer-logo-img" src="./img/image.html/footer-icon-logo.svg" width="220" height="68" alt="Техномаркт логотип" /></a>
-        </p>
+      <div class="footer-top wrapper">
+        <div class="footer-top-left"">
+          <p class="footer-logo">
+            <a href="#"><img class="footer-logo-img" src="./img/image.html/footer-icon-logo.svg" width="220" height="68" alt="Техномаркт логотип" /></a>
+          </p>
 
-        <address class="footer-address">г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></address>
-      </div>
+          <address class="footer-address">г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></address>
+        </div>
 
-      <ul class="footer-navigation list-reset">
-        <li class="footer-navigation-item">
-          <a href="blank.html">Компания</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a href="blank.html">Новости</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a href="catalog.html">Каталог</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a href="blank.html">Доставка</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a href="blank.html">Контакты</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="yellow" href="blank.html">Материалы</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="yellow" href="blank.html">Техника</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="yellow" href="blank.html">Инструмент</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="yellow" href="blank.html">Спецпредложения</a>
-        </li>
-      </ul>
-
-      <div class="footer-bottom">
-        <p class="footer-tehnomart">&#169; 2010-2019 Компания &#171;Техномарт&#187; Все права защищены</p>
-
-        <ul class="footer-share list-reset">
-          <li class="footer-share-item">
-            <a href="#" class="footer-share-link social-vk"><span class="visually-hidden">Вконтакте</span></a>
+        <ul class="footer-navigation list-reset">
+          <li class="footer-navigation-item">
+            <a href="blank.html">Компания</a>
           </li>
-          <li class="footer-share-item">
-            <a href="#" class="footer-share-link social-fb"><span class="visually-hidden">Фейсбук</span></a>
+          <li class="footer-navigation-item">
+            <a href="blank.html">Новости</a>
           </li>
-          <li class="footer-share-item">
-            <a href="#" class="footer-share-link social-ins"><span class="visually-hidden">Инстаграм</span></a>
+          <li class="footer-navigation-item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a href="blank.html">Доставка</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a href="blank.html">Контакты</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="yellow" href="blank.html">Материалы</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="yellow" href="blank.html">Техника</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="yellow" href="blank.html">Инструмент</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="yellow" href="blank.html">Спецпредложения</a>
           </li>
         </ul>
-      
-        <p class="footer-info">
-        Обратная связь
-         <a class="yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
+      </div>
 
-        <p class="footer-info academy">
-          Разработано &mdash;
-          <a class="yellow" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </p>
+      <div class="footer-bottom-background">      
+        <div class="footer-bottom wrapper">
+          <p class="footer-tehnomart">&#169; 2010-2019 Компания &#171;Техномарт&#187; Все права защищены</p>
+
+          <ul class="footer-share list-reset">
+            <li class="footer-share-item">
+              <a href="#" class="footer-share-link social-vk"><span class="visually-hidden">Вконтакте</span></a>
+            </li>
+            <li class="footer-share-item">
+              <a href="#" class="footer-share-link social-fb"><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li class="footer-share-item">
+              <a href="#" class="footer-share-link social-ins"><span class="visually-hidden">Инстаграм</span></a>
+            </li>
+          </ul>
+      
+          <p class="footer-info">
+            Обратная связь
+            <a class="yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+
+          <p class="footer-info academy">
+            Разработано &mdash;
+            <a class="yellow" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </p>
+        </div>
       </div>
     </footer>  
   </body>
