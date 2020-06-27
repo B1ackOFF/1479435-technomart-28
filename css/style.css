@@ -287,13 +287,24 @@ body {
 
 .user-navigation-active-name {
   min-width: 299px;
-}
-
-
-.user-navigation-active-name-link {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.user-navigation-active-name-link {
+  padding-left: 32px;
+}
+
+.icon-user {
+  transform: translate(-17px, 2px);
+}
+
+.user-navigation-active-deactivation {
+  min-width: 50px;
+  height: 100%;
+  padding-top: 3px;
+  padding-left: 13px;
 }
 
 .user-navigation-active-orders-link,
@@ -365,11 +376,14 @@ body {
 }
 
 .user-navigation-active-name-link:focus path,
-.user-navigation-active-name-link:hover path {
+.user-navigation-active-name-link:hover path,
+.user-navigation-active-deactivation:focus path,
+.user-navigation-active-deactivation:hover path {
   fill: var(--basic-grey);
 }
 
-.user-navigation-active-name-link:active path {
+.user-navigation-active-name-link:active path,
+.user-navigation-active-deactivation:active path {
   fill: var(--basic-greylight);
 }
 
