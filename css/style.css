@@ -188,6 +188,7 @@ body {
 
 .header-menu-link {
   display:  block;
+  word-wrap: break-word;
   height: 100%;
   width: 100%;
   padding-left: 35px;
@@ -317,6 +318,7 @@ body {
 .user-navigation-active {
   display: flex;
   flex-wrap: wrap;
+  word-wrap: break-word;
   justify-content: flex-end;
   align-content: flex-start;
   position: relative;
