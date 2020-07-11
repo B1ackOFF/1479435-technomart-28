@@ -318,7 +318,6 @@ body {
 .user-navigation-active {
   display: flex;
   flex-wrap: wrap;
-  word-wrap: break-word;
   justify-content: flex-end;
   align-content: flex-start;
   position: relative;
@@ -450,6 +449,14 @@ body {
 .user-navigation-active-deactivation:focus path,
 .user-navigation-active-deactivation:hover path {
   fill: var(--basic-grey);
+}
+
+
+.user-navigation-active-name-link:focus,
+.user-navigation-active-name-link:hover,
+.user-navigation-active-deactivation:focus,
+.user-navigation-active-deactivation:hover {
+  outline: none;;
 }
 
 .user-navigation-active-name-link:active path,
@@ -939,7 +946,6 @@ body {
 .breadcrumbs-item:focus-within,
 .breadcrumbs-item:hover {
   opacity: .5;
-  outline: none;
 }
 
 .breadcrumbs-link {
@@ -947,6 +953,10 @@ body {
   line-height: 18px;
   color: var(--basic-black);
   padding-left: 55px;
+}
+
+.breadcrumbs-link:focus {
+  outline: none;
 }
 
 .breadcrumbs-link-2 {
@@ -1178,6 +1188,10 @@ body {
   opacity: 1;
 }
 
+.checkbox input:focus + label::before {
+  opacity: 1;
+}
+
 .checkbox input[type=checkbox]:disabled + label:before {
   opacity: .4;
 }
@@ -1206,6 +1220,10 @@ body {
 }
 
 .radio label:hover:before {
+  opacity: 1;
+}
+
+.radio input:focus + label:before {
   opacity: 1;
 }
 
@@ -1648,8 +1666,12 @@ body {
   background-color: var(--basic-white);
 }
 
-.page-list-item:focus,
 .page-list-item:hover {
+  border: 1px solid var(--basic-greylight);
+  outline: none;
+}
+
+.page-list-link:focus {
   border: 1px solid var(--basic-greylight);
   outline: none;
 }
@@ -1670,6 +1692,8 @@ body {
   line-height: 18px;
   padding-top: 9px;
 }
+
+
 
 .page-active {
   background-color: var(--basic-red);
@@ -2426,6 +2450,10 @@ body {
 
 .no-repeat {
   background-repeat: no-repeat;
+}
+
+.break-word {
+  word-wrap: break-word;
 }
 
 .margin-top {

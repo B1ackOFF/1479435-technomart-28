@@ -34,16 +34,6 @@ if(feedbackClose) {
   });  
 }
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (feedbackPopup.classList.contains("modal-show-write-us")) {
-      evt.preventDefault();
-      feedbackPopup.classList.remove("modal-show-write-us");
-      feedbackPopup.classList.remove("modal-error-write-us");
-    }
-  }
-});
-
 if(feedbackPopup) {  
   feedbackPopup.addEventListener("submit", function (evt) {
     if (!feedbackName.value || !feedbackEmail.value) {
@@ -80,65 +70,11 @@ window.addEventListener("keydown", function (evt) {
     if (mapPopup.classList.contains("modal-show-map")) {
       evt.preventDefault();
       mapPopup.classList.remove("modal-show-map");
+    } 
+    if(feedbackPopup.classList.contains("modal-show-write-us")) {
+      evt.preventDefault();
+      feedbackPopup.classList.remove("modal-show-write-us");
+      feedbackPopup.classList.remove("modal-error-write-us");
     }
   }
 }); 
-
-var carts = document.querySelectorAll(".content-buy");
-var cartPopup = document.querySelector(".popup-item-added");
-var cartContinue = document.querySelector(".popup-item-added-continue");
-var cartClose = document.querySelector(".popup-item-added-close");
-var headerMenuCart = document.querySelector(".header-menu-cart");
-var cartAmount = document.querySelector(".cart-amount");
-var counter = 0;
-
-
-
-
-
-
-if(carts) {
-  for (var cart of carts) {
-    cart.onclick = function() {
-      cartPopup.classList.add("modal-show-cart");
-    };
-  }
-}
-
-/*
-if(carts) {
-  for (var cart of carts) {
-    cart.addEventListener ("click", function (evt){
-      evt.preventDefault();
-      cartPopup.classList.add("modal-show-cart");
-      headerMenuCart.style.backgroundColor = "#EE3643";
-      counter++;
-      cartAmount.textContent = counter;
-    }
-  };
-
-}
-*/
-if(cartClose) {
-  cartClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cartPopup.classList.remove("modal-show-cart");
-  });
-} 
-
-if(cartContinue) {
-  cartContinue.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cartPopup.classList.remove("modal-show-cart");
-  });
-}  
-
-window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (cartPopup.classList.contains("modal-show-cart")) {
-        evt.preventDefault();
-        cartPopup.classList.remove("modal-show-cart");
-      }
-    }
-  });
-
