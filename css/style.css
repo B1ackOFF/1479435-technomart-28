@@ -1603,7 +1603,6 @@ body {
 }
 
 .sorting-item{
- flex-grow: 1;
  display: flex;
  align-items: center;
 }
@@ -1637,17 +1636,32 @@ body {
 }
 
 .sorting-price {
-  min-width: 110px;
+  min-width: 160px;
+}
+
+.sorting-price-link {
+  padding-left: 14px;
 }
 
 .sorting-type {
   min-width: 100px;
-  padding-right: 7px;
 }
 
 .sorting-functional {
-  min-width: 150px;
-  padding-right: 2px;
+  min-width: 190px;
+}
+
+.sorting-functional-link {
+  padding-left: 7px;
+}
+
+.sorting-min,
+.sorting-max {
+  min-width: 35px;
+}
+
+.sorting-min-link {
+  padding-right: 7px;
 }
 
 .page-list {
@@ -1692,8 +1706,6 @@ body {
   line-height: 18px;
   padding-top: 9px;
 }
-
-
 
 .page-active {
   background-color: var(--basic-red);
